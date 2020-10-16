@@ -910,15 +910,15 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 609D01BF
-P 11000 3200
+P 11050 3300
 AR Path="/609D01BF" Ref="J?"  Part="1" 
 AR Path="/60972626/609D01BF" Ref="J9"  Part="1" 
-F 0 "J9" H 11000 3000 50  0000 C CNN
-F 1 "OUT_POSITIVE" V 11100 3250 50  0000 C CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 11000 3200 50  0001 C CNN
-F 3 "~" H 11000 3200 50  0001 C CNN
-	1    11000 3200
-	1    0    0    -1  
+F 0 "J9" H 11050 3100 50  0000 C CNN
+F 1 "OUT_POSITIVE" V 11150 3350 50  0000 C CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 11050 3300 50  0001 C CNN
+F 3 "~" H 11050 3300 50  0001 C CNN
+	1    11050 3300
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J?
@@ -1011,8 +1011,6 @@ Wire Wire Line
 	10350 3000 10500 3000
 Wire Wire Line
 	10500 3200 10500 3000
-Wire Wire Line
-	10500 3200 10800 3200
 Connection ~ 10500 3000
 Wire Wire Line
 	10500 3000 10650 3000
@@ -1047,7 +1045,6 @@ F 3 "~" H 10250 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10500 3200 10250 3200
-Connection ~ 10500 3200
 Wire Wire Line
 	10250 3200 10050 3200
 Connection ~ 10250 3200
@@ -1055,8 +1052,6 @@ Wire Wire Line
 	10050 3500 10250 3500
 Wire Wire Line
 	10250 3500 10450 3500
-Wire Wire Line
-	10800 3500 10800 3300
 Connection ~ 10250 3500
 Text GLabel 10450 3700 3    50   Input ~ 0
 GNDA
@@ -1731,4 +1726,11 @@ F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40r.pdf" H 3500 69
 	1    3500 6900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10850 3200 10500 3200
+Connection ~ 10500 3200
+Wire Wire Line
+	10800 3500 10800 3300
+Wire Wire Line
+	10800 3300 10850 3300
 $EndSCHEMATC
